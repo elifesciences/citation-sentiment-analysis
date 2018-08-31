@@ -1,1 +1,6 @@
-iter_flatten = lambda ll: (x for l in ll for x in l)
+def iter_flatten(ll):
+    return (x for l in ll for x in l)
+
+
+def flatten(ll):
+    return [x for l in ll for x in l]
