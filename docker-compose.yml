@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+    citation-sentiment-analysis:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: ${IMAGE_NAME}:${IMAGE_TAG}
+        command: start-notebook.sh --NotebookApp.token=''
+        ports:
+            - "${CITATION_SENTIMENT_JUPYTER_PORT}:8888"
+        volumes:
+            - .:/home/jovyan/citation-sentiment-analysis

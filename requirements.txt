@@ -1,0 +1,9 @@
+pandas==0.22.0
+imblearn
+sklearn
+nltk
+matplotlib
+tqdm
+tensorflow
+textblob
+keras
